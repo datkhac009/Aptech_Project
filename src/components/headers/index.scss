@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    padding: 1rem;
+}
+
+.header__nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__list {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__item {
+    list-style: none;
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.header__link:hover {
+    color: #646cff;
+}

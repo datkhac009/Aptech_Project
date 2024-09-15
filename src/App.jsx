@@ -1,14 +1,15 @@
+import HeaderComponent from "./components/headers"
+import FooterComponent from "./components/footers"
 
-import './App.css'
-import { Mainlayout } from './mainlayout/Mainlayout';
-function App() {
-  
+import { AppRoutes } from "./routes"
+
+export const App = () => {
+
   return (
-    <div>
-    <h1>Hello</h1>
-       <Mainlayout/>
-    </div>
+    <AppRoutes
+      header={<HeaderComponent />}
+      children={<FooterComponent />}
+      footer={<FooterComponent />}
+    />
   )
-};
-
-        export default App
+}
