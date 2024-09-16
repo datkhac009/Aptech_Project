@@ -15,12 +15,8 @@ export const AppRoutes = (props) => {
                 <Route path="/" element={<Homepage />} />
                 <Route path="/about" element={<About />} />
             </Routes>
-
-            {
-                children && <div className='children-container'>
-                    {children}
-                </div>
-            }
+        
+            {children && <div className='children-container'>{children}</div>}
 
             {footer && footer}
         </RouterViews>
