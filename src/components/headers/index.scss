@@ -22,14 +22,17 @@
         }
 
         .search {
-            margin: 0 15rem;
+            margin: 0 0rem 0px 15rem;
             width: 600px;
-            fieldset{
+
+            fieldset {
                 border-width: 0;
                 margin: 0;
                 padding: 0;
-                display: flex;    
-                width: 100%;
+                display: flex;
+                width: 498.455px;
+                height: 43.194px;
+
                 input {
                     font-size: 15px;
                     height: auto;
@@ -37,15 +40,42 @@
                     border-right: 0;
                     width: 100%;
                     padding: 14px 11px;
+                    border-right: 1px solid #ddd;
+                    margin-right: 0.10rem;
+
+                    &::placeholder {
+                        color: rgba(black, 0.5);
+                        font-weight: 600;
+
+                    }
                 }
+
             }
         }
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-transform: none;
+        font-size: 13px;
+
+        .phone,
+        .account,
+        .shopping {
+            padding: 1rem .25rem;
+            font-weight: 400;
         }
 
-        .user {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            
+        span:not(.shopping span) {
+            color: #aaa;
+
+        }
+
+        .shopping {
+            color: #468c15;
+            text-transform: uppercase;
+        }
     }
 }

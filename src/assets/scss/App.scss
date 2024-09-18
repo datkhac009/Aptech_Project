@@ -1,42 +1,57 @@
 #root {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 
 }
 
-body{
-  font-family: 'Open Sans',arial,helvetica,sans-serif;
-  font-size: 1rem;
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #0f7fff !important;
+  outline-offset: 1px !important;
+  
+}
+input{
+  border-radius: 3px;
+}
+  body {
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    font-size: 1rem;
     font-weight: 400;
     height: auto;
-}
+  }
 
 
 
 
-.card {
-  padding: 2em;
-}
+  .card {
+    padding: 2em;
+  }
 
-.read-the-docs {
-  color: #888;
-}
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
+  .read-the-docs {
+    color: #888;
+  }
 
- .small {
-  height: 60px; /* Chiều cao khi thu nhỏ */
-  /* Ẩn các phần tử khác khi thu nhỏ */
-  > 
-  div:not(.logo, .search) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .small {
+    height: 60px;
+
+    /* Chiều cao khi thu nhỏ */
+    /* Ẩn các phần tử khác khi thu nhỏ */
+    >div:not(.logo, .search) {
+      display: none;
+    }
+
+    font-size: 5px;
     display: none;
   }
-  font-size: 5px;
-  display: none;
-}

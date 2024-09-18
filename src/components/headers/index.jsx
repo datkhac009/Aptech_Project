@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import "./index.scss"
     
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCartShopping, faMagnifyingGlass, faPhone, faUser } from "@fortawesome/free-solid-svg-icons"
 
 
 const Header = () => {
@@ -30,23 +32,23 @@ const Header = () => {
                 <form>
                     <fieldset>
                         <input type="text" placeholder="Search by product or keyword..."/>
-                        <button type="submit">  search</button>
+                        <button type="submit" className="search-btn w-[50px] px-4 py-0 mb-0 bg-[#ddd] border-none text-[#333]"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
         
                     </fieldset>
                 </form>
                 </div>
                 <div className="user">
                     <div className="phone">
-                        <p> <span></span> 0327356623 </p>
+                        <p><span><FontAwesomeIcon icon={faPhone} /></span> 03-2735-6623 </p>
                     </div>
                     <div className="account">
-                        <i></i>
-                        <a href="#">Sign in </a>
+                        <span><i><FontAwesomeIcon icon={faUser} /></i></span>
+                        <a href="#"> Sign in </a>
                         <span>/ </span>
                         <a href="#">Register</a>
                     </div>
                     <div className="shopping">
-                        <a href="#"> <span></span> Cart </a>
+                        <a href="#"> <span><FontAwesomeIcon icon={faCartShopping} /></span> Cart </a>
                     </div>
                 </div>
             </nav>
