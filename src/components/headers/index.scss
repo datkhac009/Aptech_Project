@@ -15,6 +15,19 @@
         border-bottom: 1px solid #e5e5e5;
         left: 50%;
         transform: translateX(-50%);
+        display: none;
+
+
+        &.header-small {
+            height: 70px;
+
+
+            .logo img {
+                height: 55px;
+                transition: height .4s ease-in-out;
+                object-fit: contain;
+            }
+        }
 
         .logo img {
             width: 175px;
@@ -54,6 +67,18 @@
         }
     }
 
+    .navMenuPages {
+        .navMenuPages__list {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+
     .user {
         display: flex;
         align-items: center;
@@ -76,6 +101,26 @@
         .shopping {
             color: #468c15;
             text-transform: uppercase;
+        }
+    }
+
+    .navMenuPages {
+        .navMenuPages__list {
+            .navMenuPages__parent {
+                &.active {
+                    display: block;
+                    .navMenuPages__child {
+                        display: flex;
+                    }
+                }
+
+                &.hiddens {
+                    .navMenuPages__child {
+                        display: none;
+
+                    }
+                }
+            }
         }
     }
 }
