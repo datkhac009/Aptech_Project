@@ -16,7 +16,7 @@ export const AppRoutes = (props) => {
                 <Route path="/about" element={<About />} />
             </Routes>
         
-            {children && <div className='children-container'>{children}</div>}
+           
 
             {footer && footer}
         </RouterViews>
