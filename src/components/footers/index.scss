@@ -15,19 +15,42 @@
             display: flex;
 
         }
-        &>p{
+
+        &>p {
             font-size: 16px;
             letter-spacing: -.01em;
-            font-weight: 500;
-            &>span{
+            font-weight: bold;
+
+            &>span {
                 color: green;
             }
         }
     }
-    .footer__container{
+
+    .footer__container {
         background-color: #21642a;
-        .footer__info{
+
+        .footer__info {
             display: flex;
+            display: flex;
+            justify-content: center;
+            column-gap: 6rem;
+            padding: 4rem 0;
+
+            .info {
+                line-height: 2rem;
+
+                &>h3 {
+                    font-size: 15px;
+                    color: #b1d398;
+
+                }
+
+                &>p {
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

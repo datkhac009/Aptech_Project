@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="footer__container">
                 <div className="footer__info">
                     <div className="info">
-                        <h4>Customer Care</h4>
+                        <h3>Customer Care</h3>
                         <p>Shipping & Packaging</p>
                         <p>Recipes</p>
                         <p>Gift Certificates</p>
@@ -21,7 +21,7 @@ const Footer = () => {
                         <p>Terms and Conditions</p>
                     </div>
                     <div className="info">
-                        <h4>Our Company</h4>
+                        <h3>Our Company</h3>
                         <p>About Us</p>
                         <p>Private Label</p>
                         <p>Testimonials</p>
@@ -29,7 +29,7 @@ const Footer = () => {
                         <p>Contact Us</p>
                     </div>
                     <div className="info">
-                        <h4>Shop the Store</h4>
+                        <h3>Shop the Store</h3>
                         <p>Spices</p>
                         <p>Seasonings</p>
                         <p>Dehydrated Fruits & Vegetables</p>
@@ -39,7 +39,7 @@ const Footer = () => {
                         <p>Member Exclusives</p>
                     </div>
                     <div className="info">
-                        <h4>Connect With Us</h4>
+                        <h3>Connect With Us</h3>
                         <div className="info__social">
                         <FontAwesomeIcon icon={faPhone} />
                         <FontAwesomeIcon icon={faPhone} />
@@ -48,11 +48,11 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="info">
-                        <h4>Subscribe & Save!</h4>
+                        <h3>Subscribe & Save!</h3>
                         <p>Get a 10% off coupon when you sign up for our email newsletter.</p>
                         <div className="info__contact">
                             <input type="text" placeholder="Your email address"/>
-                            <button >Join Now</button>
+                            <button className="bg-[#333] border-[#333] pb-1 pt-1 pl-[20px] pr-[20px] text-[#fff] uppercase text-[12px] ml-3">Join Now</button>
                         </div>
                     </div>
                 </div>
